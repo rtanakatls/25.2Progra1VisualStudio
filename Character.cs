@@ -8,8 +8,8 @@ namespace Progra1252
 {
     internal class Character
     {
-        private string name;
-        private int health;
+        protected string name;
+        protected int health;
 
         public string Name { get { return name; } }
         public int Health { get { return health; } }
@@ -20,5 +20,9 @@ namespace Progra1252
             this.health = health;
         }
 
+        public virtual string ShowData()
+        {
+            return $"Nombre: {name}, Vida: {health}";
+        }
     }
 }
