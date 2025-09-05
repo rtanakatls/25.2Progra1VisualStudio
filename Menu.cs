@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Progra1252.Test;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,10 +20,16 @@ namespace Progra1252
 
         public void Execute()
         {
+            Person s = new Student();
+            Console.WriteLine(s.ShowData());
+
+
+
+
+            return;
             Console.WriteLine("Se inició el programa");
             CreatePlayer();
-            CreateEnemy();
-            
+            CreateEnemy();            
         }
 
         private void CreatePlayer()
